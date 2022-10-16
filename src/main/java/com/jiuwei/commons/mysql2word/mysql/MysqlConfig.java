@@ -45,11 +45,11 @@ public abstract class MysqlConfig {
 
 	public static int fieldCount = tableInfo.keySet().size();// 当前字段数量
 
-	private static final String HOST = "192.168.1.117";// 需要修改此处
+	private static final String HOST = "10.125.11.167";// 需要修改此处
 	private static final String PORT = "3306";// 需要修改此处
-	private static final String DATABASE = "jzmao";// 需要修改此处
-	private static final String USER = "root";// 需要修改此处
-	private static final String PWD = "";// 需要修改此处
+	private static final String DATABASE = "iheating_mis";// 需要修改此处
+	private static final String USER = "admin";// 需要修改此处
+	private static final String PWD = "password";// 需要修改此处
 
 	private static final String DRIVER = "com.mysql.jdbc.Driver";
 	private static final String URL = "jdbc:mysql://" + HOST + ":" + PORT + "/"

@@ -1,5 +1,6 @@
 package com.jiuwei.commons.mysql2word.word;
 
+import java.io.File;
 import java.io.FileOutputStream;
 import java.math.BigInteger;
 import java.util.List;
@@ -203,7 +204,11 @@ public class WordKit extends WordConfig {
 
 	// 输出文件
 	public void saveDocument(String savePath) throws Exception {
-		FileOutputStream fos = new FileOutputStream(savePath);
+		File file = new File(savePath);
+		if(!file.exists()) {
+			file.createNewFile();
+		}
+		FileOutputStream fos = new FileOutputStream(file);
 		document.write(fos);
 		fos.close();
 	}

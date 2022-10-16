@@ -8,7 +8,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 import com.jiuwei.commons.mysql2word.kit.StringKit;
-import com.mysql.jdbc.StringUtils;
+import com.mysql.cj.util.StringUtils;
 
 public class MysqlKit extends MysqlConfig {
 	private final static Logger logger = Logger.getLogger(MysqlKit.class);

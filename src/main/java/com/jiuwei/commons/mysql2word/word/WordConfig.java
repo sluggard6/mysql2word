@@ -37,6 +37,6 @@ public abstract class WordConfig {
 	// 表格主体相关设置
 	protected final String TABLE_WIDTH = "10000";// 表格宽度
 
-	protected final String EXPORT_FILE_PATH = "C:/Users/Administrator/Desktop/数据字典.doc";// 导出文件的存放地址
+	protected final String EXPORT_FILE_PATH = "数据字典.doc";// 导出文件的存放地址
 
 }
